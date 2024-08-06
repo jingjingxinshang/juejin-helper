@@ -76,7 +76,7 @@ const main = async () => {
   // 当前幸运值
   const luckyResult = await juejin.getLucky()
   growth.luckyValue = luckyResult.total_value
-
+  console.log('message', message)
   pushMessage({
     type: 'info',
     message: message(),
